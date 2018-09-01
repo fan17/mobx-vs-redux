@@ -10,11 +10,3 @@ export const counterIncrement = () => ({
 export const counterDecrement = () => ({
     type: COUNTER_DECREMENT,
 });
-
-export const increment = () => (dispatch) => {
-    return dispatch(counterIncrement())
-};
-
-export const decrement = () => (dispatch) => {
-    return dispatch(counterDecrement())
-};
