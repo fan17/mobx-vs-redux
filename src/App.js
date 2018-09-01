@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter, Link, Route } from 'react-router-dom';
-import MobxContainer from './mobx/MobxContainer';
+import Mobx from './mobx/Mobx';
 import Redux from './redux/Redux';
 
 class App extends Component {
@@ -15,12 +15,12 @@ class App extends Component {
                 <h1 className="App-title">Mobx vs Redux</h1>
             </header>
             <nav>
-                {/* <Link to="/mobx">Mobx</Link> */}
+                <Link to="/mobx">Mobx</Link>
                 &nbsp;|&nbsp;
                 <Link to="/redux">Redux</Link>
             </nav>
             <div>
-                {/* <Route path="/mobx" component={MobxContainer} /> */}
+                <Route path="/mobx" component={Mobx} />
                 <Route path="/redux" component={Redux} />
             </div>
         </div>
